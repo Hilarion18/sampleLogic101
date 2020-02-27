@@ -43,3 +43,24 @@ class Home extends Component {
 }
 
 export default Home
+
+// server side, let say i've created the models and using mongoose for ORM of mongoDB and here inside controller, without any validation
+import Image from '' // image model
+
+module.exports = {
+  getImages: (req,res) => {
+    Image.find({})
+    .then((data) => {
+      res.status(200).json({
+        data,
+        message: `get images`
+      })
+    })
+    .catch((err) => {
+      res.status(500).json({
+        err,
+        message: `data failure to get`
+      })
+    })
+  },
+}
