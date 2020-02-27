@@ -21,7 +21,8 @@ const C =
       "LEFT JOIN order ON order.fk_customer = customer.id"
 
 const D = 
-      "SELECT count(fk_order) AS total_order, "
+      "SELECT count(fk_order) AS total_order, order_nr"
       "FROM order_item"
+      "GROUP BY fk_order"
       "LEFT JOIN order ON order_item.fk_order = order.id"
-      "WHERE order_item.fk_order >= 2"
+      "WHERE order_item.total_order >= 2"
