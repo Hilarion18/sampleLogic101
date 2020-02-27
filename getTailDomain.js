@@ -26,4 +26,4 @@ console.log(getTopLevelDomain('http://www.google.de/something'))
 console.log(getTopLevelDomain('http://www.amazon.co.uk/something'))
 console.log(getTopLevelDomain('http://www.amazon.co.uk'))
 console.log(getTopLevelDomain('http:co.uk'))
-console.log(getTopLevelDomain('bit.ly')) // if want to get the real web inside shorten link we can use library of the shorten link itself
+console.log(getTopLevelDomain('bit.ly')) // if want to get the real web inside shorten link we can use library of the shorten link itself, i've used the bit.ly library on my previous repo

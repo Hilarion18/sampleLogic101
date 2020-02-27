@@ -12,6 +12,7 @@ console.log(Flap)
 console.log(Wing)
 console.log(Aircraft)
 
+// EXPLANATION
 // If you want to extends with existing class, 
 // make sure the root class that want to extend is on the top, 
-// because we don't know which to extend if it's not declare first
+// because we don't know which to extend if it's not declared first
