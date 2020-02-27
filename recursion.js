@@ -11,14 +11,11 @@ function doit(a, b) {
 console.log(doit(1071, 1029))
 
 function workIt(a, b) {
-  console.log(`b `, b)
   let num1 = a
   let num2 = b
-  console.log(`num2 `, num2)
   while (num2 !== 0) {
     num1 = num2
-    num2 = num1 % num2
-    console.log(`here `, num2)
+    num2 = a % num2
   }
   return num1
 }
